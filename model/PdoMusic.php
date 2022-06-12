@@ -19,7 +19,7 @@ class PdoMusic{
       	private static $serveur='mysql:host=localhost';
       	private static $bdd='dbname=bd_zicmu';   		
       	private static $user='root' ;    		
-      	private static $mdp='root' ;	
+      	private static $mdp='' ;	
         private static $monPdo;
 	private static $monPdoMusic=null;
 /**
@@ -120,7 +120,7 @@ class PdoMusic{
 		
 		$inscri = array();
 
-		$req = "select pers.nom as nomAd, pers.prenom as prenomAd, c.jourDate as date, c.nbPlace as place, pers1.nom as nomProf, pers1.prenom as prenomProf, i.nom as instru, ins.idStudent as idAd, ins.idCours as idC from inscription ins 
+		$req = "select pers.nom as nomAd, pers.prenom as prenomAd, c.jourDate as date, c.nbPlace as place, pers1.nom as nomProf, pers1.prenom as prenomProf, i.nom as instru, pers.mail as mailAd, ins.idStudent as idAd, ins.idCours as idC from inscription ins 
 		inner join students as a on a.id = ins.idStudent 
 		inner join cours as c on c.id = ins.idCours 
 		inner join professeur as prof on prof.id = c.idProf inner join person as pers on pers.id = a.id 

@@ -20,6 +20,7 @@
             <th><h1>Nom Prof</h1></th>
             <th><h1>Prénom Prof</h1></th>
             <th><h1>Instruments</h1></th>
+            <th><h1>mail</h1></th>
             <th><h1> PDF </h1></th>
             
         </tr>
@@ -37,7 +38,7 @@
             <td> <?php echo $inscri[4]; ?></td>
             <td> <?php echo $inscri[5]; ?></td>
             <td> <?php echo $inscri[6]; ?></td>
-            
+            <td> <?php echo $inscri[7]; ?></td>
             <td><a href="index.php?action=inscripdf&numInscri=<?php echo $i ?>"> pdf </a></td>
       </tr>
     <?php $i++; 

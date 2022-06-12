@@ -1,5 +1,5 @@
 <?php
-require_once("./model./PdoMusic.php");
+require_once("model/PdoMusic.php");
 
 $monPdo = PdoMusic::getPdoMusic();
 

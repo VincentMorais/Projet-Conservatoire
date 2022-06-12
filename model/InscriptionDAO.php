@@ -27,7 +27,7 @@ echo "<p>".$idstudent."</p>";
 $req = "INSERT into students(id) Values(".$idstudent.");";
 
 $monPdo->valideinscription($req);
-header('location:http://localhost/effrei/Ziqmu/Source/index.php?action=inscri');
+header('location:http://localhost/Devoir/Projet-Conservatoire-main/index.php?action=accueil');
 
 
 //echo $req ;
